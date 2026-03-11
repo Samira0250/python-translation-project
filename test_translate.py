@@ -40,6 +40,7 @@ class TestTranslateBaseClass(test_util.TestBaseClass):
             result_is_exception = True
             result = e
             pass
+
         if result and (not result_is_exception):
             result = sorted(result)
         if expected_result:
