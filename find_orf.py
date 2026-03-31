@@ -120,7 +120,7 @@ def vet_codon(codon):
     # Change `codon_pattern_str` so that it will match any valid codons, and
     # only valid codons.
     # Read the docstring above for additional clues.
-    codon_pattern_str = r'AUG'
+    codon_pattern_str = r'^[AUCGaucg]{3}$'
     ##########################################################################
 
     codon_pattern = re.compile(codon_pattern_str)
